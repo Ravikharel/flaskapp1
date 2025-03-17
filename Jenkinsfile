@@ -15,7 +15,7 @@ pipeline {
 
         stage('Run Ansible Playbook') {
             steps {
-                sh 'ssh ${ansible_user}@${ansible_ip} "ansible-playbook -i /home/vagrant/inventory /home/vagrant/deploy.yml"'
+                sh 'ssh ${ansible_user}@${ansible_ip} "ansible-playbook -i /home/vagrant/ansible/inventory /home/vagrant/ansible/deploy.yml"'
             }
         }
     }

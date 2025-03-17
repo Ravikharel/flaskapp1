@@ -1,8 +1,8 @@
 pipeline {
     agent any
     environment{ 
-        ansible_user = vagrant
-        ansible_ip=192.168.56.15
+        ansible_user = "vagrant" 
+        ansible_ip = "192.168.56.15"
     }
 
     stages {
